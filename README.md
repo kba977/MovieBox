@@ -11,11 +11,11 @@ telegram bot 推送电影天堂最新电影
 ### 一、Docker (推荐使用)
 1. 构建镜像 
 
-  切换到dockerfile文件所在目录
+   切换到dockerfile文件所在目录
 
-  ```bash
-  sudo docker build . -t movie_bot
-  ```
+   ```
+   sudo docker build . -t movie_bot
+   ```
 
 2. 启动镜像
 
