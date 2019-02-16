@@ -3,12 +3,14 @@ Telegram Bot Dytt
 
 telegram bot 推送电影天堂最新电影
 
-
-
+效果如下入所示
+![tg](./images/tg.jpg)
 
 ## 使用方法
 
-### 一、Docker (推荐使用)
+### 部署服务端
+
+#### 一、Docker (推荐使用)
 1. 构建镜像 
 
    切换到dockerfile文件所在目录
@@ -26,18 +28,19 @@ telegram bot 推送电影天堂最新电影
 3. 发送 GET 请求 imgType 自己填写, 得到 json 数据
 
    ```bash
-   http://{your_ip}:8000/crawl.json?start_requests=true&spider_name=movie
+   http://{YOUR_SCRAPYRT_IP}:8000/crawl.json?start_requests=true&spider_name=movie
    ```
+   ![scrapyrt](./images/scrapyrt.png)
 
-### 二、本机环境
+#### 二、本机环境
 
-#### 1. 需要的环境
+##### 1. 需要的环境
 
 1. python 3+
 2. scrapy
 3. scrapyrt
 
-#### 2. 步骤
+##### 2. 步骤
 
 1. 首先准备 scrapy 爬虫项目
 
@@ -48,8 +51,11 @@ telegram bot 推送电影天堂最新电影
 4. 发送 GET 请求 imgType 自己填写, 得到 json 数据
 
    ```
-   http://localhost:8000/crawl.json?start_requests=true&spider_name=movie
+   http://{YOUR_SCRAPYRT_IP}:8000/crawl.json?start_requests=true&spider_name=movie
    ```
+
+### 部署客户端
+将 `GoogleScript`中的代码拷贝到 google script 平台上, 具体步骤推荐该视频: [Telegram bot 机器人编程系列](https://www.youtube.com/watch?v=SxwsGWlMfP4), 并且替换其中的 `YOUR_CHAT_ID`, `YOUR_BOT_TOKEN` 和 上一步搭建 `scrapyrt` 的服务端 ip地址 `YOUR_SCRAPYRT_IP`
 
 ## 备注
 
