@@ -3,7 +3,7 @@ Telegram Bot Dytt
 
 telegram bot 推送电影天堂最新电影
 
-效果如下入所示
+效果如下入所示 <br>
 <img src="./images/tg.jpg" width="250px" ></img>
 
 ## 使用方法
