@@ -55,7 +55,7 @@ telegram bot 推送电影天堂最新电影
    ```
 
 ### 部署客户端
-将 `GoogleScript`中的代码拷贝到 google script 平台上, 具体步骤推荐该视频: [Telegram bot 机器人编程系列](https://www.youtube.com/watch?v=SxwsGWlMfP4), 并且替换其中的 `YOUR_CHAT_ID`, `YOUR_BOT_TOKEN` 和 上一步搭建 `scrapyrt` 的服务端 ip地址 `YOUR_SCRAPYRT_IP`
+将 `GoogleScript` 目录中的代码拷贝到 google script 平台上, 具体步骤推荐该视频: [Telegram bot 机器人编程系列](https://www.youtube.com/watch?v=SxwsGWlMfP4), 并且替换其中的 `YOUR_CHAT_ID`, `YOUR_BOT_TOKEN` 和 上一步搭建 `scrapyrt` 的服务端 ip地址 `YOUR_SCRAPYRT_IP`, 然后运行 `app.gs`中的 `sendMovie` 方法, 即可看到效果。
 
 ## 备注
 
